@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FORMULARIO LABORAL</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+  	h1{
+  		color:blue;
+  	}
+  </style>
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  	<header>
+
+  		<div align="center">
+  			<img src="header.jpeg" height="200" width="300">
+	  		
+		</div>
+
+  	</header>
+
+  	<!--ITEMS CON ENLACE-->
+  	<nav>
+    	<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+	      <li class="nav-item">
+	        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#salto1" role="tab" aria-controls="pills-personal" aria-selected="true">Información Personal</a>
+	      </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#salto2" role="tab" aria-controls="pills-puesto" aria-selected="false">Información Laboral</a>
+	      </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#salto3" role="tab" aria-controls="pills-empresa" aria-selected="false">Información Educación</a>
+	      </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#salto4" role="tab" aria-controls="pills-empresa" aria-selected="false">Registrate a la empresa</a>
+	      </li>
+
+	    </ul>
+  	</nav>
+
+  	<form method="POST" action="http://www.google.com">
+
+  	<article>
+
+  		<!-- CONTENIDO ITEMS-->
+
+    	<div class="tab-content" id="pills-tabContent">
+
+			<!-- CONTENIDO ITEM Información Personal-->
+      		<div class="tab-pane fade show active" id="salto1" role="tabpanel" aria-labelledby="pills-home-tab">
+    	
+		        <table border="5" align="center">
+		          <tr>
+		            <td colspan="5" align="center"><h1>INFORMACION PERSONAL</h1></td>
+		          </tr>
+
+		          <tr>
+		            <td>Nombres:</td>
+		            <td><input type="text" name="txt_name"required/></td>
+		            <td>Apellidos:</td>
+		            <td><input type="text" name="txt_name"required/></td>     
+		          </tr>
+		      
+		          <tr>
+		            <td>Dirección residencia propia:</td>
+		            <td><input type="text" name="txt_name"required/></td>
+		            <td>Dirección residencia terceros:</td>
+		            <td><input type="text" name="txt_name"required/></td>
+		          </tr>
+		      
+		          <tr>
+		            <td>Teléfono residencia:</td>
+		            <td><input type="tel" name="txt_name"required/></td>
+		            <td>Otros Tel:</td>
+		            <td><input type="tel" name="txt_name"required/></td>
+		          </tr>
+		      
+		          <tr>
+		            <td>Dirección electrónica (e-mail):</td>
+		            <td colspan="3"><input type="e-mail" name="txt_name"required/></td>       
+		          </tr>
+		      
+		          <tr>
+		            <td colspan="2">¿Es usted menor de 18 años?:</td>
+		            <td><input type="radio" name="rdo_mayor" value="Si"/>Si</td>
+		            <td><input type="radio" name="rdo_mayor" value="No"/>No</td>
+		          </tr>
+
+		          <tr>
+		            <td colspan="2">¿Tiene familiares trabajando en esta compañia?:</td>
+		            <td><input type="radio" name="rdo_fl_tra" value="Si"/>Si</td>
+		            <td><input type="radio" name="rdo_fl_tra" value="No"/>No</td>
+		          </tr>
+
+
+		          <tr>
+		            <td colspan="4">Si la respuesta anterior fue afirmativa, describa acontinuación el nombre, relación fliar y el cargo:</br><textarea cols="90" name="textarea"></textarea></td>
+		          </tr>       
+
+		          <tr>
+		            <td colspan="4">Describa las razones por las que eligió esta empresa para trabajar:</br><textarea cols="90" name="textarea"></textarea></td>
+		          </tr>
+
+		          <tr>
+		          	<td colspan="4">
+		          		<div class="form-group">
+						    <label for="archivo">Adjunte documento de soporte</label>
+						    <input type="file" class="form-control-file" id="archivo">
+						</div>
+		          	</td>
+		          </tr>
+		          
+		        </table>
+		        
+		 	</div>
+
+		 	<!-- CONTENIDO ITEM Información Laboral-->
+      		<div class="tab-pane fade" id="salto2" role="tabpanel" aria-labelledby="pills-profile-tab">
+		        <table border="5" align="center">
+		          <tr>
+		            <td colspan="4" align="center"><h1>INFORMACION LABORAL</h1></td>
+		          </tr>
+
+		          <tr>
+
+		            <td>Puesto que solicita</td>
+		            <td>		            
+		            <input type="text" name="ListaTrabajo" list="opciones1">
+					  <datalist id="opciones1">
+					    <option value="Gerente de Desarrollo">
+					    <option value="Director de marketing">
+					    <option value="Científico de investigación">
+					    <option value="Ingeniero jefe">
+					    <option value="Abogado corporativo">
+					    <option value="Director de comunicación">
+					    <option value="Diseñador de la experiencia del usuario">
+					  </datalist>
+				  	</td>
+		            <td>Sueldo que interesa aproximado(pesos colombianos)</td>
+		            <td>		            
+		            <input type="text" name="ListaTrabajo" list="opciones2">
+					  <datalist id="opciones2">
+					    <option value="5 millones mensuales o menos">
+					    <option value="10 millones mensuales">
+					    <option value="15 millones mensuales">
+					    <option value="20 millones mensuales o más">
+					  </datalist>
+				  	</td>
+		          </tr>
+
+		          <tr>
+		            <td colspan="4">
+		            Fecha en que estaría disponible para comenzar:
+		            <input type="date" type="text" name="txt_name" required/>
+		            </td>
+		            
+		          </tr>
+
+		          <tr>
+		            <td colspan="4">¿Está dispuesto a trabajar Horas Extras? (Por favor, marque según su disponibilidad):</td>  
+		          </tr>
+
+		          <tr>
+		            <td colspan="2">a) Horas Extras festivas</td>
+		            <td><input type="radio" name="rdo_hef" value="Si"/>Si</td>
+		                  <td><input type="radio" name="rdo_hef" value="No"/>No</td>
+		          </tr>
+
+		          <tr>
+		            <td colspan="2">b) Horas Extras nocturnas</td>
+		            <td><input type="radio" name="rdo_hen" value="Si"/>Si</td>
+		                  <td><input type="radio" name="rdo_hen" value="No"/>No</td>
+		          </tr>
+
+		          <tr>
+		            <td colspan="2">c) Horas Extras dirunas</td>
+		            <td><input type="radio" name="rdo_hedi" value="Si"/>Si</td>
+		                  <td><input type="radio" name="rdo_hedi" value="No"/>No</td>
+		          </tr>
+
+		          <tr>
+		            <td colspan="2">d) Horas Extras dominicales</td>
+		            <td><input type="radio" name="rdo_hedo" value="Si"/>Si</td>
+		            <td><input type="radio" name="rdo_hedo" value="No"/>No</td>
+		          </tr>
+
+		          <tr>
+		            <td colspan="4">A continuación liste las razones por las cuales elige este empleo</br><textarea cols="90" name="textarea"></textarea></td>        
+		          </tr>
+
+		          <tr>
+		          	<td colspan="4">
+		          		<div class="form-group">
+						    <label for="archivo">Adjunte documento de soporte</label>
+						    <input type="file" class="form-control-file" id="archivo">
+						</div>
+		          	</td>
+		          </tr>
+
+		        </table>
+      		</div>
+
+
+
+		 	<!-- CONTENIDO ITEM Información Educación-->
+      		<div class="tab-pane fade" id="salto3" role="tabpanel" aria-labelledby="pills-profile-tab">
+			    <table border="5" align="center">
+    			  <tr>
+	        	    <td colspan="4" align="center"><h1>INFORMACION EDUCACIÓN</h1></td>
+	      	      </tr>
+			      <tr>
+			        <td>Nivel de Educación</td>
+			        <td>Nombre de Institución académica</td>
+			        <td>Nombre grado obtenido</td>
+			        <td>Culminó satisfactoriamente </br>
+			        sus estudios?(Si/No)</td>
+			      </tr>
+
+			      <tr>
+			        <td>Básica</td>
+			        <td><textarea cols="40"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			      </tr>
+
+			      <tr>
+			        <td>Superior</td>
+			        <td><textarea cols="40"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			      </tr>
+			      
+			      <tr>
+			        <td>Especialización(1 ó más)</td>
+			        <td><textarea cols="40"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			      </tr>
+
+			      <tr>
+			        <td>Maestría(1 ó más)</td>
+			        <td><textarea cols="40"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			      </tr>
+
+			      <tr>
+			        <td>Doctorado(1 ó más)</td>
+			        <td><textarea cols="40"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			      </tr>
+
+			      <tr>
+			        <td>Otros(especifíque)</td>
+			        <td><textarea cols="40"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+			        <td><textarea cols="30"></textarea></td>
+
+			      </tr>
+
+			      <tr>
+		          	<td colspan="4">
+		          		<div class="form-group">
+						    <label for="archivo">Adjunte documento de soporte</label>
+						    <input type="file" class="form-control-file" id="archivo">
+						</div>
+		          	</td>
+		          </tr>
+
+			    </table>
+		  </div>
+
+
+      		<!-- CONTENIDO ITEM Registrate a la empresa-->
+      		<div class="tab-pane fade" id="salto4" role="tabpanel" aria-labelledby="pills-profile-tab"><h1 align="center">REGISTRATE A LA EMPRESA</h1>
+	        	<fieldset align="center">
+				  <label>Usuario:</label> <input type="text" required/>
+				  <label>Contraseña:</label> <input type="password" required/>				 
+				</fieldset>
+
+				<div align="center">
+					</br>
+					<button class="btn btn-danger" type="reset">
+					  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+					  Presione si desea limpiar todo
+					</button>
+					<button class="btn btn-success" type="submit">
+					  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+					  Presione si desea registrar todo
+					</button>
+				</div>
+
+      		</div>
+
+    	</div>
+  	</article>
+
+  	
+
+  	</form>
+
+  	</br>
+
+  	<footer align="center">
+  		<div class="spinner-grow text-success" role="status">
+		  <span class="sr-only"></span>
+		</div>
+
+		<div class="spinner-grow text-danger" role="status">
+		  <span class="sr-only"></span>
+		</div>
+
+		<div class="spinner-grow text-info" role="status">
+		  <span class="sr-only"></span>
+		</div>
+  	</footer>
+
+</body>
+</html>
+
+
